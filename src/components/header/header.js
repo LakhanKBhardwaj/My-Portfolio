@@ -13,7 +13,7 @@ const Header = (props) => {
 
   return (
     <>
-    <Container fluid >
+   
       <Navbar expand="lg" >
           <Navbar.Brand href="#">
             <Image  src="/assets/images/Lakhan_2.png"
@@ -49,7 +49,7 @@ const Header = (props) => {
           </Navbar.Offcanvas>
         
       </Navbar>
-      </Container>
+      
     
     </>
 

@@ -1,20 +1,396 @@
+:root {
+  --accent: #252527;
+  --base: #252527;
+  --scale: white;
+}
+
+
 .home{
     width: 100%;
     height: 87vh;
 }
 
 .intro{
-    margin-left: 15%;
-    margin-top: 20%;
+    margin-left: 10%;
+    margin-top: 15%;
 }
-.intro h1{
+/* $white: #FFF;
+$black: #000;
+
+$sky-00:        #00ECF0;
+$black-33:      #333;
+$yellow-ff:     #FFF037;
+$purpal-7d:     #7D96DF;
+$green-8b:      #8BC34A;
+$green-e2:      #E2E623;
+$gray-55:       #558B2F;
+$gray-f6:       #F6F6F6;
+$gray-67:       #676767;
+$red-ea:        #EA4335;
+$purple-8b:     #8B9DC3;
+$orange-f6:     #F65314;
+$twany-67:      #672E3B;
+$navy-22:       #223A5E;
+$blue-15:       #155C86;
+$golden-9c:     #9C9A40;
+$marina-4f:     #4F84C4;
+$atuma-d2:      #D2691E;
+$black-48:      #484848;
+$light-ff:      #FFF900;
+$dark-green:    #26333b;
+$yellow-ff:     #FFFC00; */
+
+.character-effects {
+  display: inline-block;
+  width: 100%;
+ 
+  
+}
+
+.letter-effect {
+  top: 100px;
+  width: 100%;
+  padding: 100px 0;
+  text-align: left;
+  margin-top: 5%;
+}
+  .like-text {
+    font-family: 'Playfair Display', serif;
     font-size: 50px;
-    color: #ffffff;
-    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: 5px;
+  }
+
+.desc{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
 }
-.intro span{
-    color: #ff4321;
-}
-.intro p{
+
     
-}
+
+
+  .popup-effect {
+    margin-left: 45px;
+  }
+    .popup-text 
+      span {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 60px;
+        font-weight: bolder;
+        text-align: center;
+        letter-spacing: 25px;
+        transition: .5s;
+        text-shadow: 0 0px 0 rgb(48, 47, 47, 1),
+          0 0px 0px rgba(0, 0, 0, .2),
+          0 0px 0px rgba(0, 0, 0, .2),
+          0 0px 0px rgba(0, 0, 0, .2);
+      }
+        .popup-text 
+          span:hover {
+          text-shadow: -10px 10px 0 rgba(0, 0, 0, 1),
+            0 10px 40px rgba(0, 0, 0, .2),
+            0 20px 30px rgba(0, 0, 0, .5),
+            20px 20px 20px rgba(0, 0, 0, .5);
+        }
+
+        
+
+          .popup-text  span:nth-child(1)::before {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+            color: #FFC107;
+            transition: .5s;
+            z-index: 1;
+            content: 'L';
+          }
+          
+          .popup-text span:nth-child(1):hover::after{
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+          }
+          .popup-text span:nth-child(1)::after {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 1px 0 hsl(174,5%,80%),
+            0 2px 0 hsl(174,5%,75%),
+            0 3px 0 hsl(174,5%,70%),
+            0 4px 0 hsl(174,5%,66%),
+            0 5px 0 hsl(174,5%,64%),
+            0 6px 0 hsl(174,5%,62%),
+            0 7px 0 hsl(174,5%,61%),
+            0 8px 0 hsl(174,5%,60%),
+
+            0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.3);
+            color: #fff;
+            transition: .5s;
+            content: 'L';
+            z-index: 2;
+          } 
+          .popup-text  span:nth-child(2)::before {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+            color: #FFC107;
+            transition: .5s;
+            z-index: 1;
+            content: 'A';
+          }
+ 
+          .popup-text span:nth-child(2):hover::after{
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+          }
+          .popup-text span:nth-child(2)::after {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 1px 0 hsl(174,5%,80%),
+            0 2px 0 hsl(174,5%,75%),
+            0 3px 0 hsl(174,5%,70%),
+            0 4px 0 hsl(174,5%,66%),
+            0 5px 0 hsl(174,5%,64%),
+            0 6px 0 hsl(174,5%,62%),
+            0 7px 0 hsl(174,5%,61%),
+            0 8px 0 hsl(174,5%,60%),
+
+            0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.3);
+            color: #fff;
+            transition: .5s;
+            content: 'A';
+            z-index: 2;
+          } 
+          .popup-text  span:nth-child(3)::before {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+            color: #FFC107;
+            transition: .5s;
+            z-index: 1;
+            content: 'K';
+          }
+ 
+          .popup-text span:nth-child(3):hover::after{
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+          }
+          .popup-text span:nth-child(3)::after {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 1px 0 hsl(174,5%,80%),
+            0 2px 0 hsl(174,5%,75%),
+            0 3px 0 hsl(174,5%,70%),
+            0 4px 0 hsl(174,5%,66%),
+            0 5px 0 hsl(174,5%,64%),
+            0 6px 0 hsl(174,5%,62%),
+            0 7px 0 hsl(174,5%,61%),
+            0 8px 0 hsl(174,5%,60%),
+
+            0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.3);
+            color: #fff;
+            transition: .5s;
+            content: 'K';
+            z-index: 2;
+          } 
+          .popup-text  span:nth-child(4)::before {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+            color: #FFC107;
+            transition: .5s;
+            z-index: 1;
+            content: 'H';
+          }
+ 
+          .popup-text span:nth-child(4):hover::after{
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+          }
+          .popup-text span:nth-child(4)::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            text-shadow:     0 1px 0 hsl(174,5%,80%),
+            0 2px 0 hsl(174,5%,75%),
+            0 3px 0 hsl(174,5%,70%),
+            0 4px 0 hsl(174,5%,66%),
+            0 5px 0 hsl(174,5%,64%),
+            0 6px 0 hsl(174,5%,62%),
+            0 7px 0 hsl(174,5%,61%),
+            0 8px 0 hsl(174,5%,60%),
+
+            0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.3);
+            color: #fff;
+            transition: .5s;
+            content: 'H';
+            z-index: 2;
+          } 
+          .popup-text  span:nth-child(5)::before {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+            color: #FFC107;
+            transition: .5s;
+            z-index: 1;
+            content: 'A';
+          }
+ 
+          .popup-text span:nth-child(5):hover::after{
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+          }
+          .popup-text span:nth-child(5)::after {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 1px 0 hsl(174,5%,80%),
+            0 2px 0 hsl(174,5%,75%),
+            0 3px 0 hsl(174,5%,70%),
+            0 4px 0 hsl(174,5%,66%),
+            0 5px 0 hsl(174,5%,64%),
+            0 6px 0 hsl(174,5%,62%),
+            0 7px 0 hsl(174,5%,61%),
+            0 8px 0 hsl(174,5%,60%),
+
+            0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.3);
+            color: #fff;
+            transition: .5s;
+            content: 'A';
+            z-index: 2;
+          } 
+          .popup-text  span:nth-child(6)::before {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+            color: #FFC107;
+            transition: .5s;
+            z-index: 1;
+            content: 'N';
+          }
+ 
+          .popup-text span:nth-child(6):hover::after{
+            text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+          }
+          .popup-text span:nth-child(6)::after {
+            top: 0px;
+            left: 0;
+            position: absolute;
+            text-shadow: 0 1px 0 hsl(174,5%,80%),
+            0 2px 0 hsl(174,5%,75%),
+            0 3px 0 hsl(174,5%,70%),
+            0 4px 0 hsl(174,5%,66%),
+            0 5px 0 hsl(174,5%,64%),
+            0 6px 0 hsl(174,5%,62%),
+            0 7px 0 hsl(174,5%,61%),
+            0 8px 0 hsl(174,5%,60%),
+
+            0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.3);
+            color: #fff;
+            transition: .5s;
+            content: 'N';
+            z-index: 2;
+          } 
+
+          .popup-text 
+          span:hover:before {
+          top: -10px;
+          left: 10px;
+        }
+
+        .popup-text 
+        span:hover:after {
+          top: -20px;
+          left: 20px;
+        }
+ 
+
+
+        .download-button{
+          margin-top: 50px 0 0;
+          text-decoration: none;
+          width: 100%;
+          max-width: 200px;
+          height: 50px;
+          display: block;
+          line-height: 40px;
+          letter-spacing: 3px;
+          position: relative;
+          background-color: transparent !important;
+          border-color: #FFC107 !important;
+        }
+
+        .download-button:hover{
+          background-color: #ff6702 !important;
+        }
+        
+
+
+
+
+        .img-box{
+          
+          height: 80%;
+          position: absolute;
+          bottom: 0;
+          right: 38%;
+          background-color: green;
+        }
+        .img-box img{
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-10%);
+          transition: bottom 1s, left 1s;
+        }
+        .img-box:hover .back-img{
+          bottom: 40PX;
+        }
+        .img-box:hover .main-img{
+          left: 57px;
+        }
+        .img-box .main-img{
+         
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          border: 2px #FFC107;
+        }
