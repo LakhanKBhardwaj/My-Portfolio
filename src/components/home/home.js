@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, Button } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
+import "./home.css";
 
 
 
@@ -39,8 +40,8 @@ function Home  (){
           </Col>
           <Col md={5} lg={5}>
             <div className='img-box'>
-              <img className='back-img' src='assets/images/pattern.png'/>
-              <img className='main-img' src='assets/images/myPic.png'/>
+              <Image className='back-img' src='assets/images/pattern.png' alt=''/>
+              <Image className='main-img' src='assets/images/myPic.png' alt=''/>
             </div>
           </Col>
         </Row>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Nav, Navbar, Image } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import "./header.css";
+
 
 
 
@@ -16,7 +18,8 @@ const Header = (props) => {
    
       <Navbar expand="lg" >
           <Navbar.Brand href="#">
-            <Image  src="/assets/images/Lakhan_2.png"
+            <Image  
+              src="assets/images/Lakhan2.png"
               width="150"
               height="auto"
               className="d-inline-block align-top logo"

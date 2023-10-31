@@ -356,6 +356,12 @@ $yellow-ff:     #FFFC00; */
           position: relative;
           background-color: transparent !important;
           border-color: #FFC107 !important;
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          -webkit-transform: skewX(-19deg);
+          -ms-transform: skewX(-19deg);
+          transform: skewX(-19deg);
         }
 
         .download-button:hover{
