@@ -30,7 +30,7 @@
     margin-right: 70px;
 }
 .navbar-nav .nav-link{
-    margin: 10px 30px;
+    margin-left: 4px;
 }
 .navbar-nav .nav-link:hover{
     color: #fa961c !important;

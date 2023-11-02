@@ -15,10 +15,18 @@ const App = () => {
     <div className="App">
       <Header title="Lakhan K. Bhardwaj"/>
       <main>
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
+        <div className='home'>
+          <Home name='Kumar Bhardwaj'/>
+        </div>
+        <div className='about'>
+          <About />
+        </div>
+        <div className='project'>
+          <Projects />
+        </div>
+        <div className='contact'>
+          <Contact />
+        </div>
       </main>
     </div>
   );

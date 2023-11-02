@@ -7,38 +7,16 @@
 
 .home{
     width: 100%;
-    height: 87vh;
+    height: 100vh;
+    
 }
+
 
 .intro{
     margin-left: 10%;
     margin-top: 15%;
 }
-/* $white: #FFF;
-$black: #000;
 
-$sky-00:        #00ECF0;
-$black-33:      #333;
-$yellow-ff:     #FFF037;
-$purpal-7d:     #7D96DF;
-$green-8b:      #8BC34A;
-$green-e2:      #E2E623;
-$gray-55:       #558B2F;
-$gray-f6:       #F6F6F6;
-$gray-67:       #676767;
-$red-ea:        #EA4335;
-$purple-8b:     #8B9DC3;
-$orange-f6:     #F65314;
-$twany-67:      #672E3B;
-$navy-22:       #223A5E;
-$blue-15:       #155C86;
-$golden-9c:     #9C9A40;
-$marina-4f:     #4F84C4;
-$atuma-d2:      #D2691E;
-$black-48:      #484848;
-$light-ff:      #FFF900;
-$dark-green:    #26333b;
-$yellow-ff:     #FFFC00; */
 
 .character-effects {
   display: inline-block;
@@ -343,60 +321,120 @@ $yellow-ff:     #FFFC00; */
         }
  
 
-
+ /* Download button CSS Start  */
         .download-button{
-          margin-top: 50px 0 0;
           text-decoration: none;
+          margin: 25px 0 15px;
+          color: #CC6C06;
           width: 100%;
-          max-width: 200px;
+          max-width: 220px;
           height: 50px;
           display: block;
-          line-height: 40px;
-          letter-spacing: 3px;
+          text-align: center;
           position: relative;
-          background-color: transparent !important;
-          border-color: #FFC107 !important;
+          letter-spacing: 3px;
+          line-height: 50px;
+          
+        }
+        .download-button div{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          border-radius: 5px;
+          
+        }
+
+        .download-button:hover div{
+          transform: scale(0.9);
+        }
+        .download-button div span.bg{
+          background-color: #CC6C06;
+          position: absolute;
+          width: 0;
+          height: 100%;
+          left: -5%;
+          top: 0;
           -webkit-transition: all .3s ease-in-out;
           -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
           -webkit-transform: skewX(-19deg);
           -ms-transform: skewX(-19deg);
           transform: skewX(-19deg);
+          
+
+        }
+        .download-button div:hover  span.bg{
+          width: 110%;
+          
+        }
+        .download-button span.base{
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          border: 1px solid #CC6C06;
+          border-radius: 5px;
+        }
+        .download-button span.text{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+        .download-button:hover span.text{
+          color: #fff;
         }
 
-        .download-button:hover{
-          background-color: #ff6702 !important;
-        }
-        
-
-
-
+    /* Download button CSS End  */
 
         .img-box{
-          
+          width: 45%;
           height: 80%;
-          position: absolute;
-          bottom: 0;
-          right: 38%;
-          background-color: green;
+          
         }
         .img-box img{
-          height: 100%;
+          height: 80%;
           position: absolute;
-          left: 50%;
+          left: 62%;
           bottom: 0;
           transform: translateX(-10%);
-          transition: bottom 1s, left 1s;
+          transition: bottom 1s, left 1s; 
         }
         .img-box:hover .back-img{
           bottom: 40PX;
         }
         .img-box:hover .main-img{
-          left: 57px;
+          left: 66%;
         }
+
         .img-box .main-img{
          
           -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
           border: 2px #FFC107;
         }
+ 
+@media screen and (max-width:992px){
+  .img-box img{
+    height: 45%;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    bottom: 0;
+    transform: translateX(-10%);
+    transition: bottom 1s, left 1s; 
+  }
+  .img-box:hover .back-img{
+    bottom: 40PX;
+  }
+  .img-box:hover .main-img{
+    left: 36%;
+  }
+}

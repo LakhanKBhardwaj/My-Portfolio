@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image, Button } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import "./home.css";
 
@@ -7,14 +6,14 @@ import "./home.css";
 
 
 
-function Home  (){
+function Home  (props){
   const name = "Lakhan Kumar Bhardwaj";
   
   return (
     <>
       <Container fluid className='home'>
         <Row>
-          <Col md={7} lg={7}>
+          <Col sm={12} md={12} lg={7} className='col'>
             <div className="character-effects third-effect">
               <div className="container-fluid">
                 <div className='letter-effect'>
@@ -27,22 +26,26 @@ function Home  (){
                       <span>H</span>
                       <span>A</span>
                       <span>N</span>
-                      KUMAR BHARDWAJ
+                      {props.name}
                     </p>
                   </div>
                   <p className='desc ms-5 '>This is my official portfolio website to showcase my all works realated to web development and freantend developer.</p>
-                  <Button className='ms-5 mt-3 download-button' size="lg">
-                    Download CV
-                  </Button>
+                  <a className='ms-5 mt-3 download-button' size="lg">
+                    <div>
+                      <span className='bg'></span>
+                      <span className='base'></span>
+                      <span className='text'>Download CV</span>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </Col>
-          <Col md={5} lg={5}>
-            <div className='img-box'>
+          <Col sm={12} md={12} lg={5} >
+            {/* <div className='img-box'>
               <Image className='back-img' src='assets/images/pattern.png' alt=''/>
               <Image className='main-img' src='assets/images/myPic.png' alt=''/>
-            </div>
+            </div>  */}
           </Col>
         </Row>
       </Container>
