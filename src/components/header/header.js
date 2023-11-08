@@ -1,14 +1,14 @@
 import React from 'react';
 import { Nav, Navbar, Image } from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import logo from '../../images/Lakhan2.png';
 import "./header.css";
 
 
 
 
 
-const Header = (props) => {
+const Header = () => {
 
   // const title = props.title;
   // const parts = title.split(' ');
@@ -16,10 +16,11 @@ const Header = (props) => {
   return (
     <>
    
-      <Navbar expand="lg" >
+     <div className='container-fluid ps-5'>
+       <Navbar expand="lg" >
           <Navbar.Brand href="#">
             <Image  
-              src="assets/images/Lakhan2.png"
+              src={logo}
               width="150"
               height="auto"
               className="d-inline-block align-top logo"
@@ -52,6 +53,7 @@ const Header = (props) => {
           </Navbar.Offcanvas>
         
       </Navbar>
+     </div>
       
     
     </>
