@@ -1,6 +1,6 @@
-/* .logo{
-    margin-left: 70px;
-} */
+.header{
+    padding-left: 3.5rem !important;
+}
 .custom-toggle-button{
     color: rgba(255, 255, 255, 1) !important;
 }
@@ -34,4 +34,11 @@
 }
 .navbar-nav .nav-link:hover{
     color: #fa961c !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header{
+        padding: 0;
+    }
 }

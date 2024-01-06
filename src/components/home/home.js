@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {  } from 'react';
 import { Image, Stack } from 'react-bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 import pattern from '../../images/pattern.png';
@@ -11,27 +11,9 @@ import "./home.css";
 
 
 
-function Home  (props){
+function Home(props) {
 
-  const [showOnMobile, setShowOnMobile] = useState(false);
 
-  useEffect(() => {
-    const mobileBreakpoint = 992;
-
-    const heandleResize = () => {
-      setShowOnMobile(window.innerWidth <= mobileBreakpoint)
-    };
-
-    window.addEventListener('resize', heandleResize);
-
-    heandleResize();
-
-    return() => {
-      window.removeEventListener('resize', heandleResize);
-    };
-  },[]);
-  
-  
   return (
     <>
       <Container fluid className='home'>
@@ -42,7 +24,7 @@ function Home  (props){
                 <div className='letter-effect'>
                   <Stack gap={3}>
                     <Col>
-                      <p className="like-text ms-5">Hello, I'm</p>
+                      <p className="like-text">Hello, I'm</p>
                     </Col>
                     <Col className="popup-effect">
                       <p className="like-text popup-text">
@@ -56,10 +38,10 @@ function Home  (props){
                       </p>
                     </Col>
                     <Col>
-                      <p className='desc ms-5 '>This is my official portfolio website to showcase my all works realated to web development and freantend developer.</p>
+                      <p className='desc'>This is my official portfolio website to showcase my all works realated to web development and freantend developer.</p>
                     </Col>
                     <Col>
-                      <a href='/' className=' ms-5 mt-5 download-button' size="lg">
+                      <a href='/' className='mt-5 download-button' size="lg">
                         <div>
                           <span className='bg'></span>
                           <span className='base'></span>
@@ -73,30 +55,30 @@ function Home  (props){
             </div>
           </Col>
           <Col sm={12} md={12} lg={5} >
-            <div className="image-effects">
-              <div className='container-fluid'>
-                
-                  {showOnMobile ? (
-                    <div className='mobile_img-box'>
-                      <Image className='back-img' src={pattern} alt='pattern'/>
-                      <Image className='main-img' src={myPic} alt='myPic'/>
-                    </div>
-                  ) : (
-                    <>
-                    <div className='img-box'>
-                    <Image className='back-img' src={pattern} alt='pattern'/>
-                      <Image className='main-img' src={myPic} alt='myPic'/>
-                    </div>
-                      
-                    </>
-                  )}  
-                
+
+
+            {/* {showOnMobile ?  (
+              <div className="mobile_image-effects">
+                <div className='mobile_img-box'>
+                  <Image className='back-img' src={pattern} alt='pattern' />
+                  <Image className='main-img' src={myPic} alt='myPic' />
+                </div>
               </div>
-            </div>
+            ) : (
+              <> */}
+                <div className="image-effects">
+                  <div className='img-box'>
+                    <Image className='back-img' src={pattern} alt='pattern' />
+                    <Image className='main-img' src={myPic} alt='myPic' />
+                  </div>
+                </div>
+              {/* </>
+            )} */}
+
           </Col>
         </Row>
       </Container>
-      
+
     </>
 
   );

@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
    
-     <div className='container-fluid ps-5'>
+     <div className='container-fluid header'>
        <Navbar expand="lg" >
           <Navbar.Brand href="#">
             <Image  
@@ -44,7 +44,7 @@ const Header = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-5 ">
                 <Nav.Link href="#action1" className='me-5 text-light'>HOME</Nav.Link>
-                <Nav.Link href="#action2" className='me-5 text-light'>ABOUT</Nav.Link>
+                <Nav.Link href="/about" className='me-5 text-light'>ABOUT</Nav.Link>
                 <Nav.Link href="#action3" className='me-5 text-light'>SKILLS</Nav.Link>
                 <Nav.Link href="#action4" className='me-5 text-light'>PORTFOLIO</Nav.Link>
                 <Nav.Link href="#action5" className='me-5 text-light'>HIRE ME</Nav.Link>
